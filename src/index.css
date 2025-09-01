@@ -4,17 +4,25 @@
 
 @layer base {
   body {
-    @apply bg-gray-900 text-white font-sans;
+    @apply bg-binance-dark text-white font-sans;
   }
 }
 
 @layer components {
   .card {
-    @apply bg-gray-800 rounded-lg p-6 shadow-lg border border-gray-700;
+    @apply bg-binance-gray rounded-lg border border-binance-light shadow-lg;
+  }
+  
+  .card-header {
+    @apply p-6 border-b border-binance-light;
+  }
+  
+  .card-content {
+    @apply p-6;
   }
   
   .metric-card {
-    @apply bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-4 border border-gray-700 hover:border-gray-600 transition-colors;
+    @apply card p-4 hover:bg-binance-light transition-colors duration-200;
   }
   
   .trend-positive {
