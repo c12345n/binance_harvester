@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-white font-sans;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-gray-800 rounded-lg p-6 shadow-lg border border-gray-700;
+  }
+  
+  .metric-card {
+    @apply bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-4 border border-gray-700 hover:border-gray-600 transition-colors;
+  }
+  
+  .trend-positive {
+    @apply text-green-400;
+  }
+  
+  .trend-negative {
+    @apply text-red-400;
+  }
+  
+  .trend-neutral {
+    @apply text-gray-400;
+  }
+}
